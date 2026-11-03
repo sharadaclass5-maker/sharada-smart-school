@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="or">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharada Smart School</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5fb;
+  color: #172b4d;
+}
+
+header {
+  background: #173b70;
+  color: white;
+  padding: 22px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 27px;
+}
+
+header p {
+  margin-top: 8px;
+  color: #dceaff;
+}
+
+nav {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px #ddd;
+}
+
+nav a {
+  color: #173b70;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.welcome {
+  text-align: center;
+  padding: 35px 15px;
+}
+
+.welcome h2 {
+  color: #173b70;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 950px;
+  margin: auto;
+  padding: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.card {
+  padding: 25px 12px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 5px 12px #0002;
+}
+
+.card h2 {
+  margin-bottom: 12px;
+}
+
+.card p {
+  margin-bottom: 16px;
+}
+
+.card button {
+  background: white;
+  color: #173b70;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.facebook { background: #1877F2; }
+.instagram { background: #bd398d; }
+.school { background: #087f73; }
+.question { background: #d68b19; }
+.progress { background: #6445a5; }
+.live { background: #d64b4b; }
+
+.card button:hover {
+  background: #e9efff;
+}
+
+footer {
+  background: #173b70;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  margin-top: 30px;
+}
+
+@media(max-width:500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  nav a {
+    display: inline-block;
+    margin: 7px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>SHARADA SMART SCHOOL</h1>
+  <p>Sharada Shishu Mandir, Alekhapada</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="welcome" id="home">
+  <h2>Welcome to Our School</h2>
+  <p>Learn Together, Grow Together!</p>
+</section>
+
+<div class="container" id="services">
+  <div class="grid">
+
+    <div class="card facebook">
+      <h2>Facebook</h2>
+      <p>School News & Updates</p>
+      <button onclick="openPage('https://www.facebook.com/')">
+        Open Facebook
+      </button>
+    </div>
+
+    <div class="card instagram">
+      <h2>Instagram</h2>
+      <p>School Photos & Videos</p>
+      <button onclick="openPage('https://www.instagram.com/')">
+        Open Instagram
+      </button>
+    </div>
+
+    <div class="card school">
+      <h2>Online School</h2>
+      <p>Visit SharadaOnline Portal</p>
+      <button onclick="openPage('https://online.ssmalekhapada.co.in/')">
+        Open Website
+      </button>
+    </div>
+
+    <div class="card question">
+      <h2>Question Bank</h2>
+      <p>Practice Your Questions</p>
+      <button onclick="openPage('https://online.ssmalekhapada.co.in/')">
+        Open Questions
+      </button>
+    </div>
+
+    <div class="card progress">
+      <h2>My Progress</h2>
+      <p>Check Your Learning Progress</p>
+      <button onclick="openPage('https://online.ssmalekhapada.co.in/')">
+        View Progress
+      </button>
+    </div>
+
+    <div class="card live">
+      <h2>Live Classes</h2>
+      <p>Join Online Learning</p>
+      <button onclick="openPage('https://online.ssmalekhapada.co.in/')">
+        Join Class
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<footer id="contact">
+  <h3>SHARADA SMART SCHOOL</h3>
+  <p>Sharada Shishu Mandir, Alekhapada</p>
+  <p>Education is the key to success.</p>
+  <p>© 2026 All Rights Reserved</p>
+</footer>
+
+<script>
+function openPage(url) {
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
